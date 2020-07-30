@@ -30,7 +30,7 @@ namespace RestWebApi
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSwaggerGen(c=>c.SwaggerDoc("v1",new Microsoft.OpenApi.Models.OpenApiInfo() {Title="Products Info",Version="v1" }));
-            services.AddDbContext<ProductDbContext>(option => option.UseSqlServer(@"Data Source=Ratnesh;Initial Catalog=ProductsDb;Trusted_Connection=True"));
+            services.AddDbContext<ProductDbContext>(option => option.UseSqlServer(@"Data Source=DESKTOP-G532VRP;Initial Catalog=ProductsDb;Trusted_Connection=True"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
